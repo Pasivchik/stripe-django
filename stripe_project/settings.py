@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-cjr@!&s&(2mge6af7@8wgvz4bpns8238c@ijzsj#pqd_^_bjsj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['stripe-django-production-5647.up.railway.app', 'localhost', '127.0.0.1']
 
 
 # Application definition
