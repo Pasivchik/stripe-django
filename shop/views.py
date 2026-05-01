@@ -31,8 +31,8 @@ def get_buy(request, id):
             'quantity': 1,
         }],
         mode='payment',
-        success_url='http://127.0.0.1:8000/success/',
-        cancel_url='http://127.0.0.1:8000/cancel/',
+        success_url=f'{settings.SITE_URL}/success/',
+        cancel_url=f'{settings.SITE_URL}/cancel/',
     )
 
     return JsonResponse({'session_id': session.id})
@@ -66,8 +66,8 @@ def get_order_buy(request, id):
         'payment_method_types': ['card'],
         'line_items': line_items,
         'mode': 'payment',
-        'success_url': 'http://127.0.0.1:8000/success/',
-        'cancel_url': 'http://127.0.0.1:8000/cancel/',
+        success_url=f'{settings.SITE_URL}/success/',
+        cancel_url=f'{settings.SITE_URL}/cancel/',
     }
 
     if order.discount:
