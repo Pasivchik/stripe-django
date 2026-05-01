@@ -66,8 +66,8 @@ def get_order_buy(request, id):
         'payment_method_types': ['card'],
         'line_items': line_items,
         'mode': 'payment',
-        success_url: f'{settings.SITE_URL}/success/',
-        cancel_url: f'{settings.SITE_URL}/cancel/',
+        'success_url': f'{settings.SITE_URL}/success/',
+        'cancel_url': f'{settings.SITE_URL}/cancel/',
     }
 
     if order.discount:
