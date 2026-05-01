@@ -14,10 +14,10 @@ URL: https://stripe-django-production-5647.up.railway.app/admin
 
 ## Эндпоинты
 
-- `/item/{id}` — страница товара с кнопкой Buy
-- `/buy/{id}` — получить Stripe Session для оплаты товара
-- `/buy/order/{id}` — получить Stripe Session для оплаты заказа
-- `/buy/intent/{id}` — получить Stripe Payment Intent для товара
+- `/shop/item/{id}` — страница товара с кнопкой Buy
+- `/shop/buy/{id}` — получить Stripe Session для оплаты товара
+- `/shop/buy/order/{id}` — получить Stripe Session для оплаты заказа
+- `/shop/buy/intent/{id}` — получить Stripe Payment Intent для товара
 - `/admin` — админка
 
 ## Тестовая оплата
